@@ -45,5 +45,22 @@ public class Fraccionario {
         f = new Fraccionario(num,den);
         return f;
     }
-    
+    public Fraccionario Restar(Fraccionario f2){
+        int num,den;
+        Fraccionario f;
+        
+        num=this.numerador * f2.denominador - this.denominador * f2.numerador;
+        den=this.denominador * f2.denominador;
+        f = new Fraccionario(num,den);
+        return f;
+    }
+    public Fraccionario Multiplicar(Fraccionario f2){
+        int num,den;
+        Fraccionario f;
+        
+        num=this.numerador * f2.numerador;
+        den=this.denominador * f2.denominador;
+        f = new Fraccionario(num,den);
+        return f;
+   }
 }
